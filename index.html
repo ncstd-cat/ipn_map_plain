@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1>IPN: Mapa Interactivo</h1>
+
+<div id="userType">
+    <h2>Soy:</h2>
+    <select id="userTypeSelect">
+        <option value="0">Selecciona...</option>
+    </select>
+</div>
+
+<div id="transactionType" style="display: none">
+    <h2>Trámite:</h2>
+    <select id="TrsctnTypeSelect">
+        <option value="0">Selecciona...</option>
+    </select>
+</div>
+<div id="result" style="display: none">
+    <h2>Dirígete con:</h2>
+    <h1 id="resultName"></h1>
+    <h2 id="resultPosition"></h2>
+    </select>
+</div>
+<div id="map"></div>
+
+<script src="index.js"> </script>
+
+</body>
+</html>
